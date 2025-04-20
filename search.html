@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kërkimi i Filmit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Rezultatet e kërkimit:</h2>
+  <div class="movie-list" id="resultsContainer"></div>
+
+  <script>
+    const query = localStorage.getItem("searchQuery");
+  
+    if (!query || query.length < 3) {
+      document.getElementById("resultsContainer").innerText = "Nuk u dha ndonjë term për kërkim.";
+    } else {
+      fetch(`http://localhost:7101/api/Search/search?query=${encodeURIComponent(query)}`)
+        .then(response => {
+          if (!response.ok) throw new Error("Gabim në server");
+          return response.json();
+        })
+        .then(data => {
+          if (data.length === 0) {
+            document.getElementById("resultsContainer").innerText = "Asnjë film nuk u gjet për këtë kërkim.";
+          } else {
+            renderResults(data);
+          }
+        })
+        .catch(error => {
+          console.error("Gabim gjatë kërkimit:", error);
+          document.getElementById("resultsContainer").innerText = "Gabim gjatë kërkimit të filmit.";
+        });
+    }
+  
+    function renderResults(movies) {
+      const container = document.getElementById("resultsContainer");
+      container.innerHTML = "";
+  
+      movies.forEach(movie => {
+        const item = document.createElement("div");
+        item.className = "movie-list-item";
+        item.innerHTML = `
+          <img class="movie-list-item-img" src="${movie.imageUrl}" alt="${movie.title}">
+          <span class="movie-list-item-title">${movie.title}</span>
+          <p class="movie-list-item-desc">${movie.description}</p>
+          <button class="movie-list-item-button">Shiko</button>
+          <button class="featured-button">+ Të preferuarat</button>
+        `;
+        container.appendChild(item);
+      });
+    }
+  </script>
+  
+</body>
+</html>
+

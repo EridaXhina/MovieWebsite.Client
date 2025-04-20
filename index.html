@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Filma</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">ShikoShqip</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="index.html">Faqja Kryesore</a></li>
+                    <li class="menu-list-item active"><a href="movies.html">Filma</a></li>
+                    <li class="menu-list-item active"><a href="series.html">Seriale</a></li>
+                <form action="search.html" method="get">
+                    <input type="text" id="searchInput" name="query" placeholder="Kërko film..." style="margin:10px; padding:5px;" />
+                </form>
+            </ul>
+            </div>
+            <div class="profile-container">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profili</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+        <a href="index.html"><i class="left-menu-icon fas fa-home"></i></a>
+        <a href="favorites.html"><i class="left-menu-icon fas fa-bookmark"></i></a>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('New Folder/mimozallastica2.jpg');">
+                <img class="featured-title" src="New Folder/mimozallastica.jpg" alt="" width="100" height="100">
+                <p class="featured-desc">Mimoza Llastica</p>
+                <p class="featured-desc">Në qendër të filmit është Mimoza një vajzë e vogël kryeneçe dhe e perkëdhelur që jeton në mes të një kujdesi të tepruar. Mimoza ka gjyshen e vet gjithmone ne dispozicion. Mimoza i dëbon vazhdimisht nga shtëpia shoqet dhe shokët e saj ,u prish atyre të gjithë lodrat deri sa mbetet e vetme dhe e penduar vetëm me kukullën. E izoluar nga vetmia dhe nga zilia që shikonte shoqet e tjera të gjitha bashkë ajo mundohej të shkatërronte dhe këtë shoqëri të shoqeve</p>
+                <button class="featured-button">SHIKO</button>
+                <button class="featured-button">+ Te preferuarat</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">ME TE KERKUARAT</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/yjetenetevetegjate.jpg" alt="">
+                            <span class="movie-list-item-title">Yjet e neteve te gjata</span>
+                            <p class="movie-list-item-desc">Tafili, djali i nënë Pashakos, vritet nga fashistët. Pushtuesit, të ndihmuar nga spiunët, bëjnë bastisje në fshatin e Pashakos dhe e thërrasin atë dhe djemtë e tjerë të saj që të bëjnë identifikimin e ilegalit, por asnjë nga familja nuk tregon se Tafili është i tyre. Rezistenca e Pashakos vazhdon, megjithë raprezaljet që nuk kanë të mbaruar.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/beniecenvete.jpg" alt="">
+                            <span class="movie-list-item-title">Beni ecen vete</span>
+                            <p class="movie-list-item-desc">Nga kujdesi i tepruar i prindërve, Benin nuk e lejojnë të luajë jashtë mureve të shtëpisë. Xhaxha Thomai që vjen nga fshati e merr me vete dhe për herë të parë, Beni gjendet pa kujdesin e prindërve. Beni për herë të parë jeton në familjen e xhaxhait dhe i duhet të mësojë shumë gjëra të reja. Për ta ndihmuar të kalojë frikën dhe të ambientohet e ftojnë të marrë pjesë sëbashku me fëmijët e tjerë në një piknik. Një natë Beni mbetet i vetëm në mes të pyllit por tashmë ai fillon të zbulojë një jetë shumë pranë natyrës, duke larguar frikën dhe mendimet negative të fëmijërisë.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/dyheremat.jpg" alt="">
+                            <span class="movie-list-item-title">Dy here mat</span>
+                            <p class="movie-list-item-desc">Ilo Pinci, specialist i peshkut dhe i midhjeve, si dhe shahist i njohur, arrin në një qytet të vogël bregdetar, ku është ftuar për të marrë pjesë në një simultane shahu. Por ajo që e shtyn më shumë të vijë në këtë qytet është dëshira e tij e fshehtë për të zbuluar të dhëna praktike dhe teknike lidhur me kultivimin e midhjeve. Gjatë një diskutimi, ai hedh poshtë mendimin e Sazanit, specialist dhe kultivues i midhjes. Vajza e Sazanit, e cila është gjithashtu një shahiste e talentuar, merr pjesë në ndeshjen e shahu. Ilo është i bindur se do ta përballojë lehtësisht ndeshjen me shahistët vendas, por në simultane humbet nga Rudina e vogël, e cila vendos një midhje si simbol të mbretëreshës. Ai pranon humbjen e dyfishtë, kur mësohet se ajo është vajza e kundërshtarit të tij, edhe në punë.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/kapedani.jpg" alt="">
+                            <span class="movie-list-item-title">Kapedani</span>
+                            <p class="movie-list-item-desc">Në fshat në krye të kooperativës po komandon një grua dhe xha Sulo i ankohet për këtë shokut të tij Beqo. Kështu fillojnë situatat komike. Ai vendos të kërkojë “të drejtat” e tij në Tiranë ku miku i tij Ropi punon në një post të rëndësishëm. Por xha Sulo gjen në Tiranë jo vetëm nusen e tij balerinë por edhe Beqon bashkë me të cilin zbulon se është i rrethuar nga bota e grave.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/dimriifundit.jpg" alt="">
+                            <span class="movie-list-item-title">Dimri i fundit</span>
+                            <p class="movie-list-item-desc">Gjermanët vijnë mes borës dhe dimrit. Në fshat mbeten vetëm gratë të cilat luftojnë deri sa partizanët e plagosur, të strehuar në fshat, të tërhiqen më thellë dhe bora të mbulojë gjurmët. Ballë për ballë me gjermanët, dhe nën kontrollin e tyre, gratë e fshatit të udhëhequra nga nënë Shano dhe nënë Mara nisen në grumbull për të bërë dru por në të vërtetë arrijnë me bukë dhe ushqime të partizanët.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/neemertelirise.jpg" alt="">
+                            <span class="movie-list-item-title">Ne emer te lirise</span>
+                            <p class="movie-list-item-desc">Lufta e II Botërore në një fshat. Në luftimet me nazistët plagoset një partizan grek por partizanët shqiptarë e ndihmojnë dhe e strehojnë në shtëpinë e një fshatareje. Jeta e partizanit grek dhe mesazhi që ai ka për detyrë të çojë në vendin e duhur janë në rrezik sepse komanda Greke vendoset në shtëpinë ku ai është strehuar.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="New folder/2gishtmjalte.jpg" alt="">
+                            <span class="movie-list-item-title">2 Gisht Mjalte</span>
+                            <p class="movie-list-item-desc">Historia e një çifti që tenton të realizojë një muaj mjalti në Karaibe, por një gabim në blerjen e biletave i bën ata të enden rrugëve të Shqipërisë së Jugut duke përjetuar peripeci të ndryshme.</p>
+                            <button class="movie-list-item-button">Shiko</button>
+                            <button class="featured-button">+ Te preferuarat</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('New Folder/osamire.jpg');">
+                <img class="featured-title" src="New Folder/osamire.jpg" alt="">
+                <p class="featured-desc">Seriali përcjell një grup studentësh në universitetin privat “O sa mirë”. Studentët vijnë nga rajone të ndryshme shqipfolëse të Shqipërisë, Kosovës, Maqedonisë dhe Malit të Zi. Sitcom-i e bazon humorin e tij në stereotipet rajonale shqiptare dhe ndërveprimet midis nën-kulturave të ndryshme.                </p>
+                <button class="featured-button">SHIKO</button>
+                <button class="featured-button">+ Te preferuarat</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
